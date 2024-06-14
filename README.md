@@ -4,6 +4,7 @@ Understanding the working and architecture of famous CLIP for predicting most re
 Classification by CLIP can be done by having a list of text embeddings corresponding to each class, and mapping it to image embeddings. 
 These predictions are done in latent/abstraction space.
 
+Original CLIP Paper by OpenAI : https://arxiv.org/abs/2103.00020
 
 ******************************
 # Architecture
@@ -30,4 +31,9 @@ These predictions are done in latent/abstraction space.
 3. The model was trained for around 2-3 weeks on around 250 V100 GPUs.
 
 
-   
+________________________________________
+# Advantages:
+
+1. Zero shot prediction of most probable image description based on custom text inputs.
+2. Open Vocabulary Image seach, classification tasks rather than problem/task specific models.
+3. Can query multiple info from the text at the same time.
